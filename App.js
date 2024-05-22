@@ -7,6 +7,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import PaginaLogado from './components/PaginaLogado'
 import AdicionarSenha from './components/AdicionarSenha'
 import EditarSenha from './components/EditarSenha'
+import GerarSenha from './components/GerarSenha'
 import firebase from './config/config'
 
 
@@ -33,6 +34,11 @@ export default class App extends React.Component {
             }}
           />
           <Navegacao2.Screen name="EditarSenha" component={EditarSenha} 
+          options={{
+              headerShown: false
+            }}
+          />
+          <Navegacao2.Screen name="GerarSenha" component={GerarSenha} 
           options={{
               headerShown: false
             }}

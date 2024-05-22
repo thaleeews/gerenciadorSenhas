@@ -34,8 +34,7 @@ class PaginaLogado extends React.Component {
     render() {
         return (
             <View style={styles.container}>
-                <Text style={styles.title}>Acesso a plataforma</Text>
-                <Text>Sejá bem vindo!</Text>
+                <Text style={styles.title}>Acesso à plataforma</Text>
                 <TouchableOpacity
                     style={styles.addButton}
                     onPress={() => this.props.navigation.navigate('AdicionarSenha')}
@@ -61,6 +60,13 @@ class PaginaLogado extends React.Component {
                         </View>
                     )}
                 />
+                <TouchableOpacity
+                style={styles.gerarSenhaButton}
+                    onPress={() => this.props.navigation.navigate('GerarSenha')}
+                >
+                <Text style={styles.addButtonText}>Gerar Senha</Text>
+                </TouchableOpacity>
+
                 <Image source={require('../assets/img1.png')} style={styles.footerImage} />
             </View>
         );
@@ -79,6 +85,11 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         padding: 10,
     },
+    gerarSenhaButton: {
+      backgroundColor: 'blue',
+      borderRadius: 50,
+      padding: 10,
+    },
     addButton: {
         position: 'absolute',
         top: 10,
@@ -90,6 +101,7 @@ const styles = StyleSheet.create({
     addButtonText: {
         color: 'white',
         fontSize: 20,
+        textAlign: 'center',
     },
     senhaItem: {
         padding: 10,

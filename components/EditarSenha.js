@@ -65,10 +65,16 @@ class EditarSenha extends React.Component {
                     onChangeText={(text) => this.setState({ observacoes: text })}
                     value={this.state.observacoes}
                 />
-                <TouchableOpacity onPress={this.deletarSenha}>
-                                <MaterialIcons name="delete" size={24} color="red" />
+                
+                <TouchableOpacity
+                style={styles.gerarSenhaButton}
+                    onPress={this.salvarSenha}
+                >
+                <Text style={styles.addButtonText}>Salvar Senha</Text>
+                </TouchableOpacity>
+                <TouchableOpacity onPress={this.deletarSenha} style={styles.botaoDelete}>
+                                <MaterialIcons name="delete" size={32} color="red" />
                             </TouchableOpacity>
-                <Button title="Salvar" onPress={this.salvarSenha} />
             </View>
         );
     }
@@ -82,6 +88,28 @@ const styles = StyleSheet.create({
     label: {
         fontSize: 18,
         marginVertical: 8,
+    },
+    botaoDelete: {
+      backgroundColor: 'black',
+      borderRadius: 50,
+      padding: 10,
+      marginLeft: 70,
+      marginRight: 70,
+      marginBottom: 15,
+      marginTop: 15,
+      width: 'auto',
+      display: 'flex',
+      alignItems: 'center',
+    },
+    gerarSenhaButton: {
+      backgroundColor: 'blue',
+      borderRadius: 50,
+      padding: 10,
+    },
+    addButtonText: {
+        color: 'white',
+        fontSize: 20,
+        textAlign: 'center',
     },
     input: {
         height: 40,

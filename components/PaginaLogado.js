@@ -112,6 +112,7 @@ const styles = StyleSheet.create({
         borderColor: 'gray',
         borderWidth: 1,
         borderRadius: 5,
+        backgroundColor: 'mistyrose'
     },
     senhaText: {
         fontSize: 16,

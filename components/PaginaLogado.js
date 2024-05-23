@@ -79,11 +79,13 @@ const styles = StyleSheet.create({
         padding: 16,
     },
     title: {
+      marginTop: 40,
         fontSize: 22,
         borderColor: 'gray',
         borderWidth: 1,
         textAlign: 'center',
         padding: 10,
+        borderRadius: 5,
     },
     gerarSenhaButton: {
       backgroundColor: 'blue',
@@ -97,6 +99,7 @@ const styles = StyleSheet.create({
         padding: 10,
         backgroundColor: 'blue',
         borderRadius: 50,
+        marginTop: 40
     },
     addButtonText: {
         color: 'white',

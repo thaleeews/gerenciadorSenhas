@@ -12,22 +12,22 @@ Caso o usuário deseje, ele também pode deletar a senha clicando no ícone da l
 - **Geração de Senhas:** Uma funcionalidade para gerar senhas aleatórias de 15 caracteres, incluindo letras maiúsculas, minúsculas, números e caracteres especiais. Cada vez que o botão "Gerar" é clicado, uma nova senha é gerada.
 
 ## Tela de Login
-![image](https://github.com/thaleeews/gerenciadorSenhas/assets/100948036/78b33ea9-7ad4-49b9-b65d-e51d48a12092)
+![image](https://github.com/thaleeews/gerenciadorSenhas/assets/100948036/aebd9889-5482-49db-93ff-22582def2e7d)
 
 ## Tela de Cadastro
-![image](https://github.com/thaleeews/gerenciadorSenhas/assets/100948036/27bae855-acb9-45c2-b54e-1bb740298b23)
+![image](https://github.com/thaleeews/gerenciadorSenhas/assets/100948036/f29d20db-7946-4405-91d8-d9a231f9ee7e)
 
 ## Tela Inicial
 ![image](https://github.com/thaleeews/gerenciadorSenhas/assets/100948036/170f1dd2-3655-4cf1-ac39-086e9103a318)
 
 ## Tela de Adição de Senha
-![image](https://github.com/thaleeews/gerenciadorSenhas/assets/100948036/25f0f22f-dc85-4d3a-b4e5-478459a9cef4)
+![image](https://github.com/thaleeews/gerenciadorSenhas/assets/100948036/85223cdb-a501-47fa-8b69-de42511d4a07)
 
 ## Tela de Gerar Senha
-![image](https://github.com/thaleeews/gerenciadorSenhas/assets/100948036/f123be57-e709-4e55-9e4d-4c4c068f4935)
+![image](https://github.com/thaleeews/gerenciadorSenhas/assets/100948036/f29ee2b7-b88b-4234-91ba-877d5bfa378f)
 
 ## Tela de Edição de Senha
-![image](https://github.com/thaleeews/gerenciadorSenhas/assets/100948036/aee592d9-8e28-4dbd-b8f1-c86f8df1319b)
+![image](https://github.com/thaleeews/gerenciadorSenhas/assets/100948036/97e885f8-c4bf-4686-9621-cd4c3bc46ed2)
 
 
 

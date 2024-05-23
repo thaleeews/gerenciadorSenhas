@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Text,View,Button, TextInput, Alert, StyleSheet } from 'react-native';
+import { Text,View,Button, TextInput, Alert, StyleSheet, Vibration } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
@@ -25,22 +25,26 @@ export default class App extends React.Component {
             }}/>
           <Navegacao2.Screen name="PaginaLogado" component={PaginaLogado} 
           options={{
-              headerShown: true
+              headerShown: false,
+              title: "Página Inicial"
             }}
           />
           <Navegacao2.Screen name="AdicionarSenha" component={AdicionarSenha} 
           options={{
-              headerShown: false
+              headerShown: true,
+              title: "Adicionar Senha"
             }}
           />
           <Navegacao2.Screen name="EditarSenha" component={EditarSenha} 
           options={{
-              headerShown: false
+              headerShown: true,
+              title: "Editar Senha"
             }}
           />
           <Navegacao2.Screen name="GerarSenha" component={GerarSenha} 
           options={{
-              headerShown: false
+              headerShown: true,
+              title: "Gerar Senha"
             }}
           />
        </Navegacao2.Navigator>
@@ -161,6 +165,7 @@ class Principal extends React.Component{
     firebase.auth()
     .signInWithEmailAndPassword(email, password)
       .then(() => {
+        Vibration.vibrate(500);
         Alert.alert("Logado!", "Login realizado com sucesso!");
         this.props.navigation.navigate("PaginaLogado", { email: this.state.usuario });
       })

@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, Button, StyleSheet, Image } from 'react-native';
+import { View, Text, Button, TouchableOpacity, StyleSheet, Image } from 'react-native';
 
 class GerarSenha extends React.Component {
     constructor(props) {
@@ -26,8 +26,13 @@ class GerarSenha extends React.Component {
         return (
             <View style={styles.container}>
                 <Text style={styles.senhaText}>{this.state.senha}</Text>
-                <Button title="Gerar" onPress={this.handleGerarSenha} />
-                <Image source={require('../assets/img3.png')} style={styles.footerImage} />
+                <TouchableOpacity
+                style={styles.gerarSenhaButton}
+                    onPress={this.handleGerarSenha}
+                >
+                <Text style={styles.addButtonText}>Gerar Senha</Text>
+                </TouchableOpacity>
+                <Image source={require('../assets/img3.png')} style={styles.imagem} />
             </View>
         );
     }
@@ -40,11 +45,27 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         padding: 16,
     },
+    addButtonText: {
+        color: 'white',
+        fontSize: 20,
+        textAlign: 'center',
+    },
     senhaText: {
         fontSize: 24,
         marginBottom: 20,
         textAlign: 'center',
     },
+    gerarSenhaButton: {
+      backgroundColor: 'blue',
+      borderRadius: 50,
+      padding: 10,
+    },
+    imagem: {
+      padding: 10,
+      margin: 10,
+      height: 150,
+      width: 150,
+    }
 });
 
 export default GerarSenha;

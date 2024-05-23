@@ -1,6 +1,7 @@
 import React from 'react';
-import { View, Text, TextInput, Button, StyleSheet, Alert } from 'react-native';
+import { View, Text, TextInput, Button, TouchableOpacity, StyleSheet, Alert, Vibration } from 'react-native';
 import firebase from '../config/config';
+import { MaterialIcons } from '@expo/vector-icons';
 
 class EditarSenha extends React.Component {
     constructor(props) {
@@ -15,7 +16,7 @@ class EditarSenha extends React.Component {
 
     salvarSenha = () => {
         const { id, localSenha, senha, observacoes } = this.state;
-        firebase.database().ref('tbl_senhas').child(id).update({
+        firebase.database().ref('tbl_senhas/'+id).update({
             localSenha,
             senha,
             observacoes
@@ -28,6 +29,19 @@ class EditarSenha extends React.Component {
             Alert.alert('Erro', 'Falha ao atualizar senha: ' + error.message);
         });
     };
+
+    deletarSenha = () => {
+      const { id, localSenha, senha, observacoes } = this.state;
+      firebase.database().ref('/tbl_senhas/'+id).remove().
+      then(() => {
+            Alert.alert('Sucesso', 'Senha excluída com sucesso!');
+            Vibration.vibrate(500);
+            this.props.navigation.navigate('PaginaLogado');
+        })
+        .catch((error) => {
+            Alert.alert('Erro', 'Falha ao deletar senha: ' + error.message);
+        });
+    }
 
     render() {
         return (
@@ -51,6 +65,9 @@ class EditarSenha extends React.Component {
                     onChangeText={(text) => this.setState({ observacoes: text })}
                     value={this.state.observacoes}
                 />
+                <TouchableOpacity onPress={this.deletarSenha}>
+                                <MaterialIcons name="delete" size={24} color="red" />
+                            </TouchableOpacity>
                 <Button title="Salvar" onPress={this.salvarSenha} />
             </View>
         );

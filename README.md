@@ -28,7 +28,6 @@ Caso o usuário deseje, ele também pode deletar a senha clicando no ícone da l
 
 ## Tela de Edição de Senha
 ![image](https://github.com/thaleeews/gerenciadorSenhas/assets/100948036/ca28a43a-8ec1-43f0-aa53-d04ff8fc3e66)
-![image](https://github.com/thaleeews/gerenciadorSenhas/assets/100948036/ca28a43a-8ec1-43f0-aa53-d04ff8fc3e66)
 
 
 

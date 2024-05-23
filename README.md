@@ -1,4 +1,4 @@
-# Gerenciamento de Senhas
+![image](https://github.com/thaleeews/gerenciadorSenhas/assets/100948036/01d4fcfd-a6a9-4a62-a380-8a39b0439f7f)![image](https://github.com/thaleeews/gerenciadorSenhas/assets/100948036/01d4fcfd-a6a9-4a62-a380-8a39b0439f7f)# Gerenciamento de Senhas
 
 Este é um aplicativo de gerenciamento de senhas desenvolvido em React Native. Ele permite que os usuários cadastrem, editem e visualizem suas senhas. O aplicativo utiliza Firebase para autenticação e armazenamento dos dados.
 
@@ -27,7 +27,9 @@ Caso o usuário deseje, ele também pode deletar a senha clicando no ícone da l
 ![image](https://github.com/thaleeews/gerenciadorSenhas/assets/100948036/f29ee2b7-b88b-4234-91ba-877d5bfa378f)
 
 ## Tela de Edição de Senha
-![image](https://github.com/thaleeews/gerenciadorSenhas/assets/100948036/97e885f8-c4bf-4686-9621-cd4c3bc46ed2)
+![image](https://github.com/thaleeews/gerenciadorSenhas/assets/100948036/ca28a43a-8ec1-43f0-aa53-d04ff8fc3e66)
+![image](https://github.com/thaleeews/gerenciadorSenhas/assets/100948036/ca28a43a-8ec1-43f0-aa53-d04ff8fc3e66)
+
 
 
 
